@@ -1,3 +1,5 @@
+[![Snowpack](https://github.com/robingronlund/jobylon-ad-lister/actions/workflows/snowpack.yml/badge.svg)](https://github.com/robingronlund/jobylon-ad-lister/actions/workflows/snowpack.yml)
+
 # New Project
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
