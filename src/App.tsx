@@ -1,22 +1,36 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { CardList } from './components/card-list';
+import { Header } from './components/header';
 
-import { JobsOverview } from './pages/jobs-overview';
+import type { IJobylonAd } from 'src/interface/IJobylonAd';
+import { fetchjobs } from './api/fetch';
 
 export const App: React.FC = () => {
+  const [fetching, setFetching] = useState<boolean>(false);
+  const [jobs, setJobs] = useState<IJobylonAd[]>();
+
+  const getJobs = async () => {
+    setFetching(true);
+    const data = await fetchjobs();
+
+    if (data) {
+      setJobs(data);
+      setFetching(false);
+    }
+  };
+
+  useEffect(() => {
+    getJobs();
+  }, []);
+
+  if (fetching) {
+    return <div>loading...</div>;
+  }
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<JobsOverview />}></Route>
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: '1rem' }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+    <div className="main-container">
+      <Header />
+      <CardList jobs={jobs!} />
+    </div>
   );
 };

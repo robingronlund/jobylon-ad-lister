@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 import { MdLocationOn } from 'react-icons/md';
 import parse from 'html-react-parser';
 
@@ -13,7 +12,6 @@ interface CardListProps {
 }
 
 export const Card: React.FC<CardListProps> = ({ job }) => {
-  const navigate = useNavigate();
 
   return (
     <div className="card">
