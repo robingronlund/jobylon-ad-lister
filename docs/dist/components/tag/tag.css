@@ -1,0 +1,30 @@
+.tag-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+   background-color: var(--color-purple-secondary);
+  color: var(--color-purple-primary);
+
+}
+
+.tag:nth-child(2) {
+  background-color: var(--color-blue-secondary);
+  color: var(--color-blue-primary);
+}
+
+.tag:last-child {
+  background-color: var(--color-green-secondary);
+  color: var(--color-green-primary);
+}
