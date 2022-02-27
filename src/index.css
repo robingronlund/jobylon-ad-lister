@@ -3,8 +3,10 @@
 :root {
   --background: #ffffff;
   --text: #000000;
+  --text-light: #ffffff;
   --primary: #4992fc;
   --secondary: #ff7a6d;
+  --color-tropical-blue: #C4DBFB;
 }
 
 html {
@@ -15,4 +17,11 @@ html {
   html {
     font-family: 'Inter var', sans-serif;
   }
+}
+
+button {
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
