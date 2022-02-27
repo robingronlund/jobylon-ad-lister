@@ -17,54 +17,54 @@
   box-shadow: 0 2px 20px 4px rgba(204, 204, 204, 0.5);
   border-radius: 8px;
   padding: 16px;
-  animation: fadeIn 0.5s ease-in;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  animation: fadeIn 1s ease-in;
 }
 
-.card-logo {
+.card-header {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-header img {
   width: 50px;
   border-radius: 50%;
 }
 
+.card-header label {
+  margin-left: 12px;
+}
+
 .location {
+  display: inline-flex;
+  align-items: center;
   color: var(--color-dark-gray);
   font-size: 12px;
   margin-top: 0px;
 }
 
-.tag-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  gap: 12px;
-  margin-top: 12px;
+.location p {
+  margin-left: 8px;
 }
 
-.tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  padding: 0 8px;
-  font-size: 12px;
-  border-radius: 20px;
-  background-color: var(--color-light-gray);
-  color: var(--text-primary);
-  font-weight: bold;
+.card-body {
+  font-size: 12;
+  color: var(--color-dark-gray);
 }
 
-.cta-button-wrapper {
+.cta-wrapper {
   display: flex;
   align-items: flex-end;
   height: 100%;
   gap: 22px;
+  margin-top: 12px;
 }
 
-.cta-button {
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   width: 100%;
@@ -74,12 +74,6 @@
   color: var(--text-secondary);
 }
 
-.cta-button:last-child {
-  background-color: var(--text-secondary);
-  color: var(--text-primary);
-  border: 1px solid var(--text-primary);
-}
-
-.cta-button:hover {
-  filter: opacity(80%)
+.cta:hover {
+  filter: brightness(110%)
 }
