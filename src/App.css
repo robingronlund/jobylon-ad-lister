@@ -1,6 +1,0 @@
-.main-container {
-  display: grid;
-  justify-content: center;
-  background: var(--background);
-  color: var(--text);
-}

@@ -2,8 +2,6 @@
 
 :root {
   --background: #ffffff;
-  --text: #000000;
-  --text-light: #ffffff;
   --primary: #4992fc;
   --secondary: #ff7a6d;
   --text-primary: #000000;
@@ -17,9 +15,13 @@
   --color-blue-secondary: #dbecfc;
   --color-blue-primary: #4992fc;
 }
+
+* {
+  box-sizing: border-box;
 }
 
 html {
+  height: 100%;
   font-family: 'Inter', sans-serif;
 }
 
@@ -29,9 +31,29 @@ html {
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+}
+
 button {
   border: 0;
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--background);
+  color: var(--text-pimary);
 }
