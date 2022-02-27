@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { fetchjobs } from '../../api/fetch';
 import { Card } from '../../components/card/index';
+import { Header } from '../../components/header/index';
+
+import { fetchjobs } from '../../api/fetch';
 import type { IJobylonAd } from 'src/interface/IJobylonAd';
 
 import './job-overview.css';
@@ -22,6 +24,7 @@ export const JobsOverview = () => {
 
   return (
     <div className="main-container">
+      <Header />
       <div className="card-list">
         {jobs?.map((job, index) => (
           <Card key={index} job={job} />
