@@ -4,14 +4,14 @@
   --background: #ffffff;
   --primary: #4992fc;
   --secondary: #ff7a6d;
-  --text-primary: #000000;
+  --text-primary: #363636;
   --text-secondary: #ffffff;
   --color-light-gray: #f7f7f7;
   --color-dark-gray: #757576;
   --color-purple-primary: #a25fe5;
   --color-purple-secondary: #eadbfd;
   --color-green-secondary: #d7f3e8;
-  --color-green-primary: #6dd9a6;
+  --color-green-primary: #4abd87;
   --color-blue-secondary: #dbecfc;
   --color-blue-primary: #4992fc;
 }
@@ -35,6 +35,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: rgb(108, 168, 255);
+background: rgb(108,168,255);
+background: linear-gradient(360deg, rgba(108,168,255,1) 0%, rgba(182,207,244,1) 71%);
 }
 
 body {
@@ -48,12 +51,21 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
 .main-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background: var(--background);
-  color: var(--text-pimary);
+  color: var(--text-primary);
 }
