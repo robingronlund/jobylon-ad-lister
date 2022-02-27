@@ -6,7 +6,17 @@
   --text-light: #ffffff;
   --primary: #4992fc;
   --secondary: #ff7a6d;
-  --color-tropical-blue: #C4DBFB;
+  --text-primary: #000000;
+  --text-secondary: #ffffff;
+  --color-light-gray: #f7f7f7;
+  --color-dark-gray: #757576;
+  --color-purple-primary: #a25fe5;
+  --color-purple-secondary: #eadbfd;
+  --color-green-secondary: #d7f3e8;
+  --color-green-primary: #6dd9a6;
+  --color-blue-secondary: #dbecfc;
+  --color-blue-primary: #4992fc;
+}
 }
 
 html {
