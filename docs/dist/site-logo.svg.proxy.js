@@ -1,0 +1,1 @@
+export default "/dist/site-logo.svg";
