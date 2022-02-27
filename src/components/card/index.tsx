@@ -12,7 +12,6 @@ interface CardListProps {
 }
 
 export const Card: React.FC<CardListProps> = ({ job }) => {
-
   return (
     <div className="card">
       <div className="card-header">
