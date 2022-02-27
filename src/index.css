@@ -51,15 +51,6 @@ button {
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-primary);
-}
-
 .main-container {
   display: flex;
   flex-direction: column;
