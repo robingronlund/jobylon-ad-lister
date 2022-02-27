@@ -15,11 +15,6 @@ export default {
     ],
   ],
   optimize: {
-    bundle: true,
-    minify: true,
-    threeshaking: true,
-    sourcemap: true,
-    target: 'es2020',
   },
   buildOptions: {
     out: 'docs',
