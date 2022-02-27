@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from 'src/site-logo.svg'
+import logo from '../../site-logo.svg'
 
 import './header.css';
 
