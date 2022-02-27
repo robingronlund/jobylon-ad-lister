@@ -1,56 +1,85 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .card {
-  display: grid;
-  align-items: center;
-  width: 350px;
-  height: 300px;
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
   background-color: var(--background);
   box-shadow: 0 2px 20px 4px rgba(204, 204, 204, 0.5);
   border-radius: 8px;
   padding: 16px;
-  transition: all 0.25s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-0.2rem);
+  animation: fadeIn 0.5s ease-in;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .card-logo {
-  width: 65px;
-  border-radius: 8px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.location {
+  color: var(--color-dark-gray);
+  font-size: 12px;
+  margin-top: 0px;
 }
 
 .tag-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 12px;
+  display: flex;
   justify-content: flex-start;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .tag {
-  display: grid;
+  display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
   height: 30px;
-  padding: 4px;
+  padding: 0 8px;
   font-size: 12px;
-  border-radius: 8px;
-  background-color: var(--color-tropical-blue);
-  color: var(--primary);
-  text-align: center;
+  border-radius: 20px;
+  background-color: var(--color-light-gray);
+  color: var(--text-primary);
   font-weight: bold;
 }
 
 .cta-button-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  justify-content: flex-start;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  gap: 22px;
 }
 
 .cta-button {
+  font-size: 16px;
+  font-weight: bold;
   width: 100%;
   height: 40px;
   border-radius: 8px;
   background-color: var(--secondary);
-  color: var(--text-light);
+  color: var(--text-secondary);
+}
+
+.cta-button:last-child {
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+}
+
+.cta-button:hover {
+  filter: opacity(80%)
 }
