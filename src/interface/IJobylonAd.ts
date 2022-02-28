@@ -10,7 +10,7 @@ export interface IJobylonAd {
   from_date: string;
   function: string;
   id: number;
-  internal_reference: any
+  internal_reference: any;
   language: string;
   layers_1: any[];
   layers_2: any[];
@@ -25,12 +25,12 @@ export interface IJobylonAd {
   title: string;
   to_date: any;
   urls: IUrls;
-  video: IVideo
+  video: IVideo;
 }
 
 interface ICompany {
   id: number;
-  industry: string
+  industry: string;
   cover: string;
   descr: string;
   logo: string;
@@ -39,7 +39,6 @@ interface ICompany {
   name_internal: string;
   website: string;
 }
-
 
 interface IContact {
   name: string;
@@ -53,7 +52,7 @@ interface ILocations {
 }
 
 interface ILocation {
-  text: string
+  text: string;
 }
 
 interface IOwner {

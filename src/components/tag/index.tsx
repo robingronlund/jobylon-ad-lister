@@ -8,7 +8,11 @@ interface TagProps {
   industry: string;
 }
 
-export const Tag: React.FC<TagProps> = ({ employmentType, experience, industry }) => {
+export const Tag: React.FC<TagProps> = ({
+  employmentType,
+  experience,
+  industry,
+}) => {
   return (
     <div className="tag-wrapper">
       <div className="tag">{employmentType}</div>
