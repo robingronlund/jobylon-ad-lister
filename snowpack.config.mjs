@@ -15,6 +15,10 @@ export default {
     ],
   ],
   optimize: {
+    bundle: true,
+    minify: true,
+    treeshake: true,
+    target: 'es2020',
   },
   buildOptions: {
     out: 'docs',
